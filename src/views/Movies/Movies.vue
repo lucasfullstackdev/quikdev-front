@@ -3,7 +3,11 @@
 </template>
 
 <script>
+// const axios = require('axios').default;
 export default {
   name: "movies-view",
+  // created() {
+  //     const test = 
+  // },
 };
 </script>
