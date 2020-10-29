@@ -1,13 +1,22 @@
 export const customRoutes = [
     {
-        path: '/movies',
-        name: 'movies',
-        component: () => import('./../views/Movies.vue')
+        path: "/app",
+        name: 'app',
+        component: () => import('./../views/App.vue'),
+        children: [
+            {
+                path: '/app/movies',
+                name: 'movies',
+                component: () => import('./../views/Movies/Movies.vue')
+            },
+            {
+                path: '/app/movies/:id',
+                name: 'movie',
+                component: () => import('./../views/Movies/Movie.vue')
+            },
+        ]
     },
-    {
-        path: '/movies/:id',
-        name: 'movie',
-        component: () => import('./../views/Movie.vue')
-    },
-    { path: '', redirect: '/movies' }
+    
+
+    { path: '', redirect: '/app' }
 ];
