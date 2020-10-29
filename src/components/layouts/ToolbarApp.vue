@@ -1,6 +1,10 @@
 <template>
   <b-navbar toggleable="lg" class="border-bottom">
-    <b-button class="mr-2 d-md-none" variant="white" @click="emitToggleNav">
+    <b-button
+      class="mr-2 d-md-none btn-toggle"
+      variant="white"
+      @click="emitToggleNav"
+    >
       <b-icon icon="justify"></b-icon>
     </b-button>
 
@@ -8,13 +12,9 @@
       href="https://accordous.com.br/"
       target="_blank"
       title="Ir para Accordous"
-    ></b-navbar-brand>
-    <b-navbar-nav class="ml-auto">
-      <b-button variant="danger">
-        logout
-        <b-icon icon="door-open-fill" variant="white" class="ml-3"></b-icon>
-      </b-button>
-    </b-navbar-nav>
+    >
+      Soluções em filmes
+    </b-navbar-brand>
   </b-navbar>
 </template>
 
@@ -28,3 +28,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.btn-toggle {
+  color: #403181;
+}
+</style>
