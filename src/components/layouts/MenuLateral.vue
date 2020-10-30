@@ -101,11 +101,6 @@ export default {
   width: 100%;
 }
 
-a {
-  color: var(--quikdev-info);
-  text-decoration: none;
-}
-
 a li {
   padding: 0px 10px 0px 10px;
   line-height: 50px;

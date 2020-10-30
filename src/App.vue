@@ -54,4 +54,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+a {
+  color: var(--quikdev-info) !important;
+  text-decoration: none !important;
+}
 </style>

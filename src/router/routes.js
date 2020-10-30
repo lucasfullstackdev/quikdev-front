@@ -18,11 +18,19 @@ export const customRoutes = [
                 component: () => import('./../views/Movies/Movie.vue')
             },
             {
-                path: "/app/categories",
-                name: "categories",
-                component: () => import('./../views/Categories/Categories.vue'),
-                label: "Categorias",
+                path: "/app/genres",
+                name: "genres",
+                component: () => import('./../views/Genres/Genres.vue'),
+                label: "Gêneros",
                 inNav: true,
+                children: [
+                    {
+                        path: "/app/genres/:id",
+                        name: "genre",
+                        component: () => import('./../views/Genres/Genre.vue'),
+                        inNav: false
+                    }
+                ]
             },
         ]
     },
