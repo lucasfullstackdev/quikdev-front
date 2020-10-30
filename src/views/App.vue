@@ -46,7 +46,7 @@ export default {
 <style scoped>
 .container-app {
   width: 100%;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 60px);
   padding: 10px !important;
 
   overflow: auto;

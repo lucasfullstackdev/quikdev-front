@@ -31,6 +31,6 @@ export default {
 
 <style scoped>
 .btn-toggle {
-  color: #403181;
+  color: var(--quikdev-info) #403181;
 }
 </style>

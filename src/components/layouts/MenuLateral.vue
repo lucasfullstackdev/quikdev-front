@@ -59,7 +59,6 @@ export default {
       customRoutes.forEach((route) => {
         if (route.children) {
           let children = route.children.filter((child) => child.inNav === true);
-          console.log(children);
           routes = [...children, ...routes];
         }
 
@@ -103,7 +102,7 @@ export default {
 }
 
 a {
-  color: #403181;
+  color: var(--quikdev-info);
   text-decoration: none;
 }
 
@@ -116,8 +115,8 @@ a li {
 a:hover li,
 a.active li {
   background: white;
-  color: #ff4081;
-  border-left: 5px solid #ff4081;
+  color: var(--quikdev-danger);
+  border-left: 5px solid var(--quikdev-danger);
 }
 
 @media screen and (min-width: 768px) {
