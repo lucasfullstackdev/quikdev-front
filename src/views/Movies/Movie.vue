@@ -136,6 +136,7 @@ export default {
 
   opacity: 0.2;
   background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 img {
@@ -153,7 +154,8 @@ img {
 
 .details {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
 
   padding: 0px 70px;
 
