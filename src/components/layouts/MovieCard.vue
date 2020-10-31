@@ -12,6 +12,9 @@
         <b-card-text>
           <hr />
           <h6>{{ movie.release_date }}</h6>
+          <b-button block variant="success" @click="details(movie.id)"
+            >Detalhes</b-button
+          >
         </b-card-text>
 
         <div class="overview">
@@ -30,6 +33,12 @@ export default {
   props: {
     movies: {
       type: Array,
+    },
+  },
+
+  methods: {
+    details(id) {
+      this.$router.push({ name: "movie", params: { id: id } });
     },
   },
 };
@@ -59,7 +68,7 @@ h4 {
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
+  bottom: 100px;
   opacity: 0;
 
   background: rgba(255, 255, 255, 1);

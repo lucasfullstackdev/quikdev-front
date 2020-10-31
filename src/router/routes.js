@@ -27,8 +27,7 @@ export const customRoutes = [
                     {
                         path: "/app/genres/:id",
                         name: "genre",
-                        component: () => import('./../views/Genres/Genre.vue'),
-                        inNav: false
+                        component: () => import('./../views/Genres/Genre.vue')
                     }
                 ]
             },
