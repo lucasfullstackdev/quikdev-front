@@ -1,4 +1,3 @@
-
 <p align="center"><img src="https://vuejs.org/images/logo.png" width="100"></p>
 
 <p align="center">
